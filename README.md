@@ -1,2 +1,2 @@
 # apis-e-web-services
-demos grpc da disciplina Apis e Web Services pós graduação 
+demos grpc desenvolvidas para disciplina  Apis e Web Services pós graduação 

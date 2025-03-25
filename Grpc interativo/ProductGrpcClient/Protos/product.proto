@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "ProductGrpcClient";
+
+package Product;
+import "google/protobuf/timestamp.proto";
+
+service Product {
+  rpc GetProductBrand(GetProductBrandRequest) returns (GetProductBrandResponse);
+}
+
+message GetProductBrandRequest {
+  string name = 1;
+}
+
+message GetProductBrandResponseModel {
+  string key = 1;
+  string brandname = 2;
+  string productname = 3;
+  string suggestedprice = 4;
+  google.protobuf.Timestamp createdAt = 5;
+}
+
+message GetProductBrandResponse {
+  repeated GetProductBrandResponseModel productbrand = 1;
+}
