@@ -7,7 +7,7 @@ CREATE TABLE Products (
 );
 
 INSERT INTO Products (BrandName, ProductName, SuggestedPrice) VALUES
-('Apple', 'iPhone 15', 799.99),
-('Samsung', 'Galaxy S23', 699.99),
-('Xiaomi', 'Redmi Note 12', 299.99),
-('Google', 'Pixel 7', 599.99);
+('Apple', 'iPhone 15', 7299.99),
+('Samsung', 'Galaxy S23', 5199.99),
+('Xiaomi', 'Redmi Note 12', 1799.99),
+('Google', 'Pixel 7', 4499.99);

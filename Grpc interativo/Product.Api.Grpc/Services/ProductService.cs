@@ -26,7 +26,6 @@ namespace Product.Api.Grpc.Services
             using var connection = new MySqlConnection(connectionString);
             await connection.OpenAsync();
 
-            // Busca exata, sem diferenciar maiúsculas e minúsculas
             string query = @"
                 SELECT Id, BrandName, ProductName, SuggestedPrice, CreatedAt
                 FROM Products 

@@ -7,21 +7,8 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        // Configuração do cliente gRPC com HTTP/1.1
-        var handler = new HttpClientHandler()
-        {
-            MaxConnectionsPerServer = 10,
-        };
-
-        var httpClient = new HttpClient(handler)
-        {
-            DefaultRequestVersion = new Version(1, 1) // Forçando HTTP/1.1
-        };
-
-        var channel = GrpcChannel.ForAddress("http://localhost:5122", new GrpcChannelOptions
-        {
-            HttpClient = httpClient
-        });
+      
+        var channel = GrpcChannel.ForAddress("http://localhost:5122");
 
         var client = new Product.ProductClient(channel);
 
